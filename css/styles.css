@@ -1,0 +1,209 @@
+/*Styles applying to all pages*/
+body {
+	padding: 0 0 100px 0;
+	margin: 0;
+	background-color: white;
+	height: 100%;
+	position: relative;
+}
+
+nav {
+	height: 81px;
+	background: #89b3a6 !important;
+	background: url(../images/navbar_logo.jpg) !important;
+	border-top: 5px solid white;
+	border-right: 5px solid white;
+	padding: 0;
+}
+
+button {
+	position: absolute;
+	right: 2%;
+	top: 17px;
+}
+
+div#navbarNav {
+	height: 100%;
+}
+
+ul.navbar-nav {
+	position: absolute;
+	top: 3px;
+	right: 0;
+	background-color: #89b3a6;
+	padding: 15px;
+	z-index: 1;
+}
+
+.navbar-nav a {
+	text-align: center;
+	color: white !important;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: .95em;
+	font-weight: 600;
+	text-transform: uppercase;
+    text-shadow: 1px 1px 5px #006422;
+}
+
+div.container {
+	margin-top: 50px;
+	width: 75%;
+	max-width: 1120px;
+	background-color: white;
+}
+
+div.container h1 {
+	color: #006422;
+	font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
+	text-align: left;
+	border-bottom: 2px solid #006422;
+	margin-top: 20px;
+}
+
+div.container h2 {
+	margin-top: 15px;
+	color: #006422;
+	font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
+	text-align: center;
+}
+
+div.container p {
+	margin-top: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	margin: 15px 0;
+	padding-top: 15px;
+}
+
+div.footer {
+	margin: 0;
+	padding: 7px 0 7px 0;
+	width: 100%;
+	background-color: #89B3A6;
+	border: 5px solid white;
+	text-align: center;
+	position: absolute;
+    bottom: 0;
+}
+
+div.footer p {
+	padding: 0;
+	margin: 0;
+	color: white;
+	font-family:  Arial, sans-serif;
+	font-size: .85em;
+	font-weight: 600;
+	text-shadow: 1px 1px 5px #006422;
+}
+
+div.footer a {
+	text-decoration: none;
+	color: white;
+}
+
+/*Styles applying to Home*/
+h2.smaller {
+	font-size: 1.9em;
+}
+
+span.smallest {
+	font-size: .8em;
+}
+
+a.no-style {
+	color: black;
+	font-style: italic;
+}
+
+/*Styles applying to Lots Available*/
+div p.left {
+	text-align: left;
+}
+
+p.italic {
+	font-style: italic;
+}
+
+table {
+	margin: 20px auto 0 auto;
+	table-layout: fixed;
+}
+
+th {
+	border-top: 1px solid black;
+	border-bottom: 2px solid black;
+	text-align: center;
+	width: 200px;
+	font-size: 1.3em;
+}
+
+td {
+	font-size: 1.2em;
+}
+
+th.narrower {
+	width: 25px;
+}
+
+td.center {
+	text-align: center;
+}
+
+div.small-width {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*Styles applying to About The Builder*/
+img.victor {
+	margin: 0 10px 0 0;
+}
+
+figcaption p {
+	font-size: .80em;
+	text-align: center !important;
+}
+
+/*Styles applying to Model Home*/
+div.contact-info-div {
+	width: 90%;
+	margin: 0 auto;
+}
+
+h3 {
+	color: #006422;
+	font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
+	margin-top: 20px;
+	margin-bottom: -10px;
+	text-decoration: underline;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+p.contact-info {
+	font-size: 1.2em;
+	font-weight: 500;
+	line-height: 1.25em;
+	text-align: left !important;
+}
+
+div.iframe {
+	margin: 15px auto 30px auto;
+	padding: 0;
+	max-width: 400px;
+	height: 300px;
+}
+
+iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
