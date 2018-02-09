@@ -1,0 +1,180 @@
+/*============ All Pages ============*/
+body {
+	padding: 0;
+	margin: 0;
+	background-color: white;
+	height: 100%;
+	position: relative;
+	font-family: "Droid Serif", serif;
+  font-size: 16px;
+  color: #212529;
+}
+
+a {
+  text-decoration: none;
+  color: #212529;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #212529;;
+}
+
+.hidden {
+	display: none;
+}
+
+
+/*============ Navbar ============*/
+nav {
+  min-height: 85px;
+  border: 5px solid white;
+  background-color: #89B3A5;
+  background: url(../images/navbar_logo.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+nav ul.desktop {
+  list-style-type: none;
+  text-align: right;
+  margin-top: 26px;
+  margin-right: 20px
+}
+
+nav ul.desktop li {
+  display: inline;
+  margin: 0 8px;
+}
+
+nav ul.mobile {
+  list-style-type: none;
+  text-align: left;
+  margin-top: 35px;
+}
+
+nav ul.mobile li {
+  margin-top: 10px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 18px !important;
+  text-shadow: 1px 1px 1px black;
+}
+
+nav ul li a:hover {
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px black;
+}
+
+nav ul li a:active {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+}
+
+.hamburger-button {
+  border: 1px solid white;
+  border-radius: 5px;
+  display: none;
+  float: right;
+  margin-top: 22px;
+  margin-right: 20px;
+}
+
+.hamburger-button:hover {
+  cursor: pointer;
+}
+
+#nav-link-mobile {
+  display: none;
+}
+
+.nav-link-mobile {
+  position: absolute;
+  background-color: #89B3A5;
+  width: 100%;
+  top: 75px;
+  z-index: 1;
+}
+
+.nav-link-mobile ul {
+  width: 100%;
+}
+
+.nav-link-mobile li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+@media (max-width: 1040px) {
+  nav ul li a {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 920px) {
+  nav ul li a {
+    font-size: 14px !important;
+  }
+
+  nav ul.desktop li {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 815px) {
+  ul.desktop {
+    display: none;
+  }
+
+  nav ul li a {
+    font-size: 18px !important;
+  }
+
+  .hamburger-button {
+    display: block;
+  }
+}
+
+@media (max-width: 360px) {
+  nav {
+    background: url(../images/navbar_logo2.png);
+  }
+}
+
+
+/*============ Footer ============*/
+footer {
+  background-color: #89B3A5;
+  border: 5px solid white;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+footer p {
+  margin: 1px;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+footer.home-footer {
+  margin-top: 0;
+}
+
+footer.open-house-footer {
+	margin-top: 50px;
+}

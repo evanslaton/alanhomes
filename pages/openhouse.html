@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="icon" href="images/favicon-16x16.png">
-	<title>Alan Homes | Custom and New Home Builder</title>
 
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113875829-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-113875829-1');
+	</script>
+
+
+	<link rel="icon" href="images/favicon-16x16.png">
+	<title>Alan Homes &#124; Custom and New Home Builder</title>
 	<meta name="description" content="Alan Homes is dedicated to personal attention and strives to create a positive and stress free home building experience. Your referral is our ultimate goal.">
 	<meta name="keywords" content="new homes for sale, home builders, custom homes, custom builder, villas, building, contractor, builder, sylvania real estate, sylvania new homes, sylvania home builders, sylvania custom homes, sylvania luxury homes, construction management, toledo home builders, I want to buy a new home, I need to buy a new home, lots, building lots, new home sites">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +33,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Droid+Serif" rel="stylesheet">
+
+
+	<!-- Font Awesome -->
+	<script src="https://use.fontawesome.com/188800f7ce.js"></script>
+
+
 	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../css/navbar-footer.css">
 	<link rel="stylesheet" href="../css/styles.css">
 
 
@@ -31,16 +52,18 @@
 </head>
 <body>
 
+
+<!-- Navbar -->
 <nav>
 	<a href="index.html">
 		<h1 class="hidden">Alan Homes, Inc</h1>
 	</a>
 	<ul class="desktop">
 		<li>
-			<a href="../index.html">home</a>
+			<a href="../index.html">Home</a>
 		</li>
 		<li>
-			<a href="villasatcarrietownenorth.html">Villas at CarrieTowne North</a>
+			<a href="villasatcarrietownenorth.html">Villas at Carrietowne North</a>
 		</li>
 		<li>
 			<a href="lotsavailable.html">Lots Available</a>
@@ -58,10 +81,10 @@
 	<div id="nav-link-mobile" class="nav-link-mobile">
 		<ul>
 			<li>
-				<a href="../index.html">home</a>
+				<a href="../index.html">Home</a>
 			</li>
 			<li>
-				<a href="villasatcarrietownenorth.html">Villas at CarrieTowne North</a>
+				<a href="villasatcarrietownenorth.html">Villas at Carrietowne North</a>
 			</li>
 			<li>
 				<a href="lotsavailable.html">Lots Available</a>
@@ -76,33 +99,49 @@
 	</div>
 </nav>
 
+
+<!-- Banner -->
+<!-- <div class="banner5">
+	<div class="banner-film">
+		<h1 class="text-center banner-h1-2">Come Visit</h1>
+		<h2 class="text-center banner-h2-2">Sundays 1pm - 4pm (except holidays)</h2>
+	</div>
+</div> -->
+
+
 <div class="container">
-	<h1>Come Visit</h1>
-		
-	<p>Alan Homes is currently entertaining prospective clients. You are encouraged to schedule an informative meeting to discuss your new home ideas and to learn more about Alan Homes and why we are a good choice. As always, our goal is to assist you in creating a productive and stress&#45;free experience.</p>
+	<h1 class="visit">Come Visit</h1>	
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12">
+			<p class="about-text">Alan Homes is currently entertaining prospective clients. You are encouraged to schedule an informative meeting to discuss your new home ideas and to learn more about Alan Homes and why we are a good choice. As always, our goal is to assist you in creating a productive and stress&#45;free experience.</p>
 
-	<p>To schedule a meeting please call to talk directly to Alan Homes President, Victor Markowitz. You are also invited to join us at our open house Sundays 1&#58;00pm &#45; 4&#58;00pm (except holidays).</p>
-
-	<div class="row contact-info-div">
-		<div class="col-lg-5 col-md-5 col-sm-12">
-			<h3 class="contact-phone-heading">Phone&#58;</h3>
+			<p>To schedule a meeting please call to talk directly to Alan Homes President, Victor Markowitz. You are also invited to join us at our open house Sundays 1&#58;00pm &#45; 4&#58;00pm (except holidays).</p>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 contact-details">
+			<h3 class="contact-phone-heading model">Phone&#58;</h3>
 			<p class="contact-info"><a href="tel:419-843-7789">419-843-7789</a></p>
-			<h3>Open House&#58;</h3>
-			<address><p class="contact-info">Sundays, 1pm &#45; 4pm<br />(except holidays)<br />6800 Ridgewood Trail <br/>Toledo, OH 43617</p></address>
-			<h3>Directions&#58;</h3>
-			<p class="contact-info">Ridgewood Trail is located off N. McCorde Rd. three streets north of Central Ave.</p>
+			<h3 class="model">Open House&#58;</h3>
+			<address><p class="contact-info">Sundays, 1pm &#45; 4pm (except holidays)<br />6800 Ridgewood Trail <br/>Toledo, OH 43617</p></address>
+			<h3 class="model">Directions&#58;</h3>
+			<p class="contact-info">Ridgewood Trail is located off N. McCord Rd.<br />three streets north of Central Ave.</p>
+		</div>
+	</div>
 
-		</div>
-		<div class="col-lg-7 col-md-7 col-sm-12 iframe">
-			<iframe class="blue" src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=300&hl=ru&q=6800%20Ridgewood%20Trail+(Alan%20Homes%20Model%20Home)&ie=UTF8&t=&z=14&iwloc=A&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="100%"></iframe>
-		</div>
+	<h1>Location</h1>	
+	<div class="iframe-div">
+		<iframe class="blue" src="https://www.mapsdirections.info/en/custom-google-maps/map.php?width=100%&height=300&hl=ru&q=6800%20Ridgewood%20Trail+(Alan%20Homes%20Model%20Home)&ie=UTF8&t=&z=14&iwloc=A&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="100%"></iframe>
 	</div>
 </div>
 
-<footer class="text-center">
-	<p>Office | <a href="tel:419-843-7789">(419) 843-7789</a></p>
-	<p>Email | <a href="mailto:victormarkowitz@gmail.com">victormarkowitz@gmail.com</a></p>
-	<p>Model Home | 6800 Ridgewood Trail, Toledo, OH 43617</p>
+
+
+
+
+<!-- Footer -->
+<footer class="open-house-footer text-center">
+	<p>Office &#124; <a href="tel:419-843-7789">&#40;419&#41; 843&#45;7789</a></p>
+	<p>Email &#124; <a href="mailto:victormarkowitz@gmail.com">victormarkowitz@gmail.com</a></p>
+	<p>Model Home &#124; 6800 Ridgewood Trail, Toledo, OH 43617</p>
 </footer>
 
 </body>

@@ -1,151 +1,5 @@
-/*Styles applying to all pages*/
-body {
-	padding: 0;
-	margin: 0;
-	background-color: white;
-	height: 100%;
-	position: relative;
-}
-
-.hidden {
-	display: none;
-}
-
-
-/*============ Navbar ============*/
-nav {
-  min-height: 85px;
-  border: 5px solid white;
-  background-color: #89B3A5;
-  background: url(../images/navbar_logo.jpg);
-  background-repeat: no-repeat;
-  font-family: Arial, Helvetica, sans-serif;
-  position: relative;
-}
-
-nav ul.desktop {
-  list-style-type: none;
-  text-align: right;
-  margin-top: 26px;
-  margin-right: 20px
-}
-
-nav ul.desktop li {
-  display: inline;
-  margin: 0 8px;
-}
-
-nav ul.mobile {
-  list-style-type: none;
-  text-align: left;
-  margin-top: 35px;
-}
-
-nav ul.mobile li {
-  margin-top: 10px;
-}
-
-nav ul li a {
-  color: white;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px black;
-}
-
-nav ul li a:hover {
-  color: white;
-  text-decoration: none;
-  text-shadow: 2px 2px 3px black;
-}
-
-.hamburger-button {
-  border: 1px solid white;
-  border-radius: 5px;
-  display: none;
-  float: right;
-  margin-top: 18px;
-  margin-right: 20px;
-}
-
-.hamburger-button:hover {
-  cursor: pointer;
-}
-
-#nav-link-mobile {
-  display: none;
-}
-
-.nav-link-mobile {
-  position: absolute;
-  background-color: #89B3A5;
-  width: 100%;
-  top: 75px;
-  z-index: 1;
-}
-
-.nav-link-mobile li {
-  list-style-type: none;
-  margin-top: 10px;
-}
-
-@media (max-width: 1040px) {
-  nav ul li a {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 945px) {
-  ul.desktop {
-    display: none;
-  }
-
-  .hamburger-button {
-    display: block;
-  }
-}
-
-@media (max-width: 360px) {
-  nav {
-    background: url(../images/navbar_logo2.png);
-  }
-}
-
-
-/*============ Footer ============*/
-footer {
-  background-color: #89B3A5;
-  border: 5px solid white;
-  color: white;
-  text-shadow: 1px 1px 3px black;
-  padding: 10px;
-}
-
-footer p {
-  margin: 1px;
-  font-size: 14px;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-}
-
-footer a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-div.container {
-	margin-top: 50px;
-	width: 75%;
-	max-width: 1120px;
-	background-color: white;
-}
-
 div.container h1 {
 	color: #006422;
-	font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
 	text-align: left;
 	border-bottom: 2px solid #006422;
 	margin-top: 20px;
@@ -154,25 +8,160 @@ div.container h1 {
 div.container h2 {
 	margin-top: 15px;
 	color: #006422;
-	font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
 	text-align: center;
-}
-
-div.container p {
-	margin-top: 15px;
-	font-family: Arial, Helvetica, sans-serif;
-	padding: 0;
 }
 
 .container img {
 	width: 100%;
 	height: auto;
-	margin: 15px 0;
-	padding-top: 15px;
+}
+
+div.banner, div.banner2, div.banner3, div.banner4, div.banner5 {
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 30%;
+}
+
+div.banner {
+	position: relative;
+	height: 700px;
+	background-image: url(../images/model.jpg);
+}
+
+div.banner2 {
+	background-image: url(../images/foyer.jpg);
+}
+
+div.banner3 {
+	background-image: url(../images/woods.jpg);
+}
+
+div.banner4 {
+	background-image: url(../images/bathtub.jpg);
+	background-position: center center;
+}
+
+div.banner5 {
+	background-image: url(../images/model.jpg);
+}
+
+div.banner-film {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(125, 125, 125, .75);
+}
+
+h1.banner-h1, h2.banner-h2, p.banner-box {
+	text-shadow: 2px 2px 5px #000;
+	color: white;
+}
+
+h1.banner-h1 {
+	font-family: Oswold;
+	font-size: 60px;
+	padding: 240px 20px 0;
+}
+
+h2.banner-h2 {
+	padding: 0 20px;
+}
+
+h1.banner-h1-2 {
+	font-size: 60px;
+	padding-top: 170px;
+}
+
+div.banner-box-center {
+	width: 550px;
+	margin: 50px auto;
+	position: relative;
+}
+
+p.banner-box {
+	border: 1px solid white;
+	width: 250px;
+	padding: 8px 0;
+	text-shadow: 2px 2px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+	background-color: rgba(125, 125, 125, .5);
+	display: inline-block;
+	border-radius: 5px;
+}
+
+p.banner-box:hover {
+	box-shadow: 2px 2px 5px #000;
 }
 
 
-/*Styles applying to Home*/
+p.banner-box:active {
+	box-shadow: 1px 1px 3px #000;
+}
+
+p.banner-box-one {
+	position: absolute;
+	left: 0;
+}
+
+p.banner-box-two {
+	position: absolute;
+	right: 0;
+}
+
+div.row-padding {
+	padding: 45px 0;
+}
+
+div.row-padding2 {
+	padding: 5px 0;
+}
+
+h3.landing-page-info_heading {
+	color: #145742;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 10px 0;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+p.landing-page-info_text {
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+p.in-the-villas {
+	margin: 20px 0 10px;
+}
+
+p.last-line {
+	margin-bottom: 0;
+}
+
+div.home-page-thematic-break {
+	height: 150px;
+	background-color: #89B3A5;
+	padding-top: 45px;
+}
+
+div.home-page-thematic-break p {
+	font-size: 36px;
+	color: #FFF;
+	text-shadow: 1px 1px 3px #000;
+}
+
+figure.plans-figure {
+	border: 1px solid grey;
+	box-shadow: 1px 1px 2px grey;
+	padding: 5px;
+	width: 100%;
+}
+
+figure.plans-figure figcaption {
+	padding: 6px 3px 3px;
+	border-top: 1px solid grey;
+}
+
 h2.smaller {
 	font-size: 1.9em;
 }
@@ -186,7 +175,8 @@ a.no-style {
 	font-style: italic;
 }
 
-/*Styles applying to Lots Available*/
+
+/*========== Styles applying to Lots Available ==========*/
 div p.left {
 	text-align: left;
 }
@@ -196,7 +186,7 @@ p.italic {
 }
 
 table {
-	margin: 20px auto 0 auto;
+	margin: 50px auto 0 auto;
 	table-layout: fixed;
 }
 
@@ -205,7 +195,8 @@ th {
 	border-bottom: 2px solid black;
 	text-align: center;
 	width: 200px;
-	font-size: 1.3em;
+	font-size: 24px;
+	font-family: Oswold, serif;
 }
 
 td {
@@ -223,14 +214,35 @@ td.center {
 div.small-width {
 	width: 80%;
 	margin: 0 auto;
+	margin-top: 30px;
 }
 
-/*Styles applying to About The Builder*/
+
+/*========== Styles applying to Villas at Carrietowne ==========*/
+
+.villas-text {
+	margin-top: -5px;
+}
+
+
+/*========== Styles applying to About The Builder ==========*/
+h1.alan-advantage {
+	margin-top: 30px !important;
+}
+
+h1.about-builder_title {
+	margin-top: 40px !important;
+}
+
 .about-figure {
 	width: 40%;
-	margin: 10px 20px 0 0;
+	margin: 25px 20px 0 0;
 	padding: 0;
 	float: left;
+}
+
+.about-text {
+	margin-top: 25px;
 }
 
 img.victor {
@@ -252,52 +264,35 @@ figcaption p {
 	clear: both;
 }
 
-.custom-home-banner {
-	border: 1px solid black;
-	margin-bottom: 60px;
-	float: right;
-	width: 57.75%;
+
+/*========== Styles applying to Model Home ==========*/
+h1.visit {
+	margin-top: 25px !important;
 }
 
-/*Styles applying to Model Home*/
 div.contact-info-div {
 	width: 90%;
 	margin: 0 auto 30px;
 }
 
-h3 {
+h3.model {
 	color: #006422;
-	font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
 	margin-top: 20px;
 	margin-bottom: -10px;
-	text-decoration: underline;
+	font-size: 22px;
 }
 
 .contact-phone-heading {
 	margin-top: 5px;
 }
 
-a {
-	color: black;
-	text-decoration: none;
-}
-
-p.contact-info a:hover {
-	color: black;
-	text-decoration: none;
-}
-
 p.contact-info {
-	font-size: 1.1em;
-	font-weight: 500;
 	line-height: 1.25em;
-	text-align: left !important;
+	margin-top: 10px;
 }
 
-div.iframe {
-	margin: 15px auto 30px auto;
-	padding: 0;
-	max-width: 400px;
+div.iframe-div {
+	margin: 25px auto 0;
 	height: 300px;
 }
 
@@ -307,27 +302,39 @@ iframe {
 	height: 100%;
 }
 
-div.winter-incentive {
-	margin-top: 20px;
-	background-color: #c9d7e8;
-	padding: 8px 20px;
+
+
+/*========== Winter Promotion ==========*/
+div.winter-promotion {
+	position: absolute;
+	padding: 13px 10px 0;
+	bottom: 100px;
+	width: 100%;
+	background-color: #29452F;
+	background-color: rgba(41, 69, 47, .7);
 }
 
-div.winter-incentive h2 {
-	color: black !important;
-	font-size: 1.2em;
+div.winter-promotion p {
+	color: #FFF;
+	text-shadow: 1px 1px #000;
 }
 
-div.winter-incentive p {
-	color: black !important;
-	font-size: .9em;
+p.winter-promotion_big {
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 5px;
 }
 
-div.winter-incentive a:hover {
-	color: black;
-	text-decoration: none;
+p.winter-promotion_small {
+	font-size: 14px;
 }
 
+div.winter-promotion a {
+	color: #FFF;
+}
+
+
+/*========== Media Queries ==========*/
 @media screen and (min-width: 1290px) {
 	.about-figure {
 		margin-bottom: 60px;
@@ -340,15 +347,250 @@ div.winter-incentive a:hover {
 	}
 }
 
+@media screen and (max-width: 992px) {
+	h3.landing-page-info_heading {
+		margin-top: 40px;
+	}
+
+	.villas-text {
+		margin-top: 20px;
+	}
+
+	div.villas-row-padding-top {
+		padding-top: 10px;
+	}
+
+	p.last-line {
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 902px) {
+	div.home-page-thematic-break {
+		padding-top: 50px;
+	}
+
+	div.home-page-thematic-break p {
+		font-size: 28px !important;
+	}
+}
+
+@media screen and (max-width: 861px) {
+	div.winter-promotion {
+		bottom: 75px;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	.about-figure {
 		width: 50%;
 	}
 }
 
+@media screen and (max-width: 768px) {
+	div.small-width {
+		width: 100%;
+	}
+
+	div.small-width li {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 725px) {
+	p.winter-promotion_big {
+		font-size: 16px;
+	}
+
+	p.winter-promotion_small {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 714px) {
+	div.home-page-thematic-break {
+		padding-top: 55px;
+	}
+
+	div.home-page-thematic-break p {
+		font-size: 24px !important;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	div.banner {
+		height: 600px;
+	}
+
+	h1.banner-h1 {
+		font-size: 45px;
+		padding: 210px 20px 0;
+	}
+
+	h2.banner-h2 {
+		font-size: 28px;
+	}
+
+	div.winter-promotion {
+		bottom: 0;
+	}
+
+	p.winter-promotion_big {
+		font-size: 14px;
+	}
+
+	p.winter-promotion_small {
+		font-size: 12px;
+	}
+
+	p.banner-box-one {
+		position: absolute;
+		left: 10px;
+	}
+
+	p.banner-box-two {
+		position: absolute;
+		right: 10px;
+	}
+}
+
+@media screen and (max-width: 617px) {
+	div.home-page-thematic-break {
+		padding-top: 55px;
+	}
+
+	div.home-page-thematic-break p {
+		font-size: 18px !important;
+	}
+}
+
 @media screen and (max-width: 600px) {
+	.about-figure {
+		width: 80%;
+		float: none;
+		margin: 20px auto;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	div.banner-box-center {
+		margin-top: 0px;
+		display: block;
+		width: 100%;
+	}
+
+	p.banner-box-one, p.banner-box-two {
+		position: relative;
+		display: block;
+		margin: 20px auto;
+		right: 0;
+		left: 0;
+	}
+
+	div.contact-details {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 569px) {
+	span.disappear {
+		display: none;
+	}
+
+	span.capitalize {
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (max-width: 509px) {
+	div.small-width ul {
+		padding-left: 20px;
+	}
+
+	div.banner {
+		height: 500px;
+	}
+
+	h1.banner-h1 {
+		font-size: 35px;
+		padding: 150px 20px 0;
+	}
+
+	h2.banner-h2 {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	div.home-page-thematic-break {
+		padding-top: 60px;
+	}
+
+	div.home-page-thematic-break p {
+		font-size: 16px !important;
+	}
+
 	.about-figure {
 		width: 100%;
 		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 455px) {
+	div.winter-promotion {
+		bottom: -30px;
+		background-color: #29452F;
+	}
+
+	div.villas-row-padding-top {
+		padding-top: 60px;
+	}
+}
+
+@media screen and (max-width: 445px) {
+	div.winter-promotion {
+		bottom: -50px;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	div.home-page-thematic-break {
+		padding-top: 50px;
+	}
+}
+
+@media screen and (max-width: 410px) {
+	div.banner {
+		height: 400px;
+	}
+
+	h1.banner-h1 {
+		font-size: 25px;
+		padding: 100px 20px 0;
+	}
+
+	h2.banner-h2 {
+		font-size: 18px;
+	}
+
+	p.banner-box-one, p.banner-box-two {
+		font-size: 16px;
+	}
+
+	div.winter-promotion {
+		bottom: -55px;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	table {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 308px) {
+	div.winter-promotion {
+		bottom: -75px;
 	}
 }
