@@ -217,6 +217,9 @@ div.small-width {
 	margin-top: 30px;
 }
 
+span.smaller-text {
+	font-size: 75%;
+}
 
 /*========== Styles applying to Villas at Carrietowne ==========*/
 
